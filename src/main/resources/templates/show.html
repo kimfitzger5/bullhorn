@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Posts</a><br/>
+Title: <span th:text="${message.title}"></span><br/>
+Instructor :<span th:text="${message.author}"></span><br/>
+Description:<p th:text="${message.message}"></p>
+Credits:<span th:text="${message.date}"></span><br/>
+<a th:href="@{/delete/{id}(id=${message.id})}">Delete this message</a>
+</body>
+</html>
